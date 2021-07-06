@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import './App.css'
 import Button from './components/UI/Button/Button'
 import DemoOutput from './components/Demo/DemoOutput'
@@ -6,10 +6,10 @@ import DemoOutput from './components/Demo/DemoOutput'
 function App() {
 	const [showParagaph, setShowParagaph] = useState(false)
 
-	const toggleParagraphHandler = () => {
+	const toggleParagraphHandler = useCallback(() => {
 		// setShowParagaph(!prevShowParagaph)
 		setShowParagaph(prevShowParagaph => !prevShowParagaph)
-	}
+	}, [])
 	console.log('app re-excuted')
 
 	return (
