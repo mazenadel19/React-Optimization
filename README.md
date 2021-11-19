@@ -4,6 +4,6 @@
 
 - open terminal
 - git clone `https://github.com/mazenadel19/react-optimization.git`
-- `npm i`
 - cd react-optimization
+- `npm i`
 - `npm start` or `yarn start`
